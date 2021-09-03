@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> 
+<meta charset="UFT-8">
+<pre>
+<title>seja bem vindo</title>
+</pre>
+<script type="text/javascript">
+    function startTime()
+    {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    // adicione um zero na frente de números<10
+    m=checkTime(m);
+    s=checkTime(s);
+    document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+    t=setTimeout('startTime()',500);
+    }
+    function checkTime(i)
+    {
+    if (i<10)
+    {
+    i="0" + i;
+    }
+    return i;
+    }
+    </script>
+      
+</head>
+
+<div style="text-align:center"></div>
+<body onload="startTime()"><center>
+    
+<nav><h1>Somente um teste</h1></nav>
+<textarea id="story" name="story"
+          rows="10" cols="66">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vel aliquid totam sed laborum nulla, atque provident maiores? Numquam temporibus voluptatem cupiditate quaerat mollitia aliquam esse asperiores praesentium ex voluptatum?</textarea>
+<br><pre> 
+<input id="date" type="date">
+</pre>
+<br>
+<div inputmode="barra de pesquisa"></div>
+<button class="bt1" onclick="alert('Salvar')">Salvar</button>
+<button class="bt2" onclick="alert('Cancelar')">Cancelar</button>
+<br>
+<pre>
+<progress value="15"></progress>
+<br>
+</pre>
+<div id="txt"></div>
+
+<div class="jumbotron text-center">
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p> 
+  </div>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Column 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Column 3</h3>        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+    </div>
+  </div>
+</center>
+<style>
+
+title{
+    color: brown;
+}
+nav{
+    color: rgb(8, 5, 49);
+}
+.bt1 {
+    color: rgb(255, 254, 254);
+    background-color: rgb(51, 153, 73);
+border:1px solid #25692A;
+border-radius:4px;
+display:inline-block;
+cursor:pointer;
+font-family:Verdana;
+font-weight:bold;
+font-size:13px;
+padding:6px 10px;
+text-decoration:darkgoldenrod;
+} 
+.bt2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(177, 163, 8);
+border:1px solid #276925;
+border-radius:4px;
+display:inline-block;
+cursor:pointer;
+font-family:Verdana;
+font-weight:bold;
+font-size:13px;
+padding:6px 10px;
+text-decoration:darkgoldenrod;
+} 
+
+textarea{
+    size: initial;
+    block-size: 100px;
+}
+nav{
+    column-rule-color: darkblue;
+}
+div{
+    
+font-style: italic;
+color: rgb(0, 0, 0);
+
+}
+
+</style>
+
+</body>
+
+
+</html>
