@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de comentarios</title>
+  <h1>Em modificaçao</h1>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+  <div class="flex-container">
+<form class="pure-form" id="comment-form">
+    <div class="comment-form">
+        <div class="left-side">
+             <div class="row">
+                 <input type="text" required placeholder="Coloque seu nome" id="new_comment_name">
+                 <input placeholder="coloque seu email" required type="email" id="new_comment_email">
+              </div>
+              <div class="row">
+                  <textarea placeholder="Escreva seu comentario" required id="new_comment_text" rows="3"></textarea>
+              </div>
+        </div>
+       <div class="right-side">
+              <button type="submit" class="button-secondary pure-button">Mandar mesagens</button>
+       </div>
+  
+  
+      </div>
+  </form>
+  <div class="vote circle">
+    <div class="increment up"></div>
+    <div class="increment down"></div>
+       
+    <div class="count">0</div>
+  </div>
+  <form class="pure-form" id="comment-form">
+    <div class="comment-form">
+        <div class="left-side">
+             <div class="row">
+                 <input type="text" required placeholder="Coloque seu nome" id="new_comment_name">
+                 <input placeholder="coloque seu email" required type="email" id="new_comment_email">
+              </div>
+              <div class="row">
+                  <textarea placeholder="Escreva seu comentario" required id="new_comment_text" rows="3"></textarea>
+              </div>
+        </div>
+       <div class="right-side">
+              <button type="submit" class="button-secondary pure-button">Mandar mesagens</button>
+       </div>
+  
+  
+      </div>
+  </form>
+  <div class="vote circle">
+    <div class="increment up"></div>
+    <div class="increment down"></div>
+    <limit class="vote-up=1"></limit>
+    <limit class="vote-down=1"></limit>
+    
+    <div class="count">0</div>
+  </div>
+</div>
+</body>
+</html>
